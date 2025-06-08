@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexora - Project Lifeline</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- THE DYNAMIC BACKGROUND -->
+    <div class="background-container">
+      <div class="stars"></div>
+      <div class="nebula"></div>
+      <div class="shooting-stars"></div>
+    </div>
+
+    <div class="app-container" id="app-container">
+      <!-- MOBILE OVERLAY & HAMBURGER -->
+      <div class="mobile-overlay" id="mobile-overlay"></div>
+      <button class="sidebar-toggle" id="sidebar-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h1 class="logo">Nexora</h1>
+          <button class="new-chat-btn" id="new-chat-btn">
+            <i class="fa-solid fa-plus"></i> New Chat
+          </button>
+        </div>
+        <nav class="chat-history-nav">
+          <ul class="chat-history" id="chat-history"></ul>
+        </nav>
+        <div class="sidebar-footer">
+          <div class="footer-controls">
+            <p>Created by <strong>Manav Tyagi</strong></p>
+            <label
+              class="theme-switch"
+              for="theme-checkbox"
+              title="Toggle Theme"
+            >
+              <input type="checkbox" id="theme-checkbox" />
+              <div class="slider">
+                <div class="slider-icon"><i class="fa-solid fa-sun"></i></div>
+                <div class="slider-icon"><i class="fa-solid fa-moon"></i></div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- MAIN CHAT AREA -->
+      <main class="chat-container">
+        <div class="chat-log" id="chat-log">
+          <div class="welcome-screen" id="welcome-screen">
+            <h2>Nexora</h2>
+            <p>DSA guidance for a new era.</p>
+          </div>
+        </div>
+        <div class="chat-input-area">
+          <div class="input-wrapper">
+            <textarea
+              id="chat-input"
+              placeholder="Transmit your query..."
+              rows="1"
+            ></textarea>
+            <button id="send-btn" class="send-btn" title="Send">
+              <i class="fa-solid fa-arrow-up"></i>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
